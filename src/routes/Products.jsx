@@ -4,7 +4,6 @@ function Products() {
 	return (
 		<div>
 			<h1>Welcome to Products!</h1>
-			<Link to="/">Visit Home</Link>
 			<Link to="/products/1">Visit Product Details</Link>
 		</div>
 	);
