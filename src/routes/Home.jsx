@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import "../styles/home.css";
 import homeImage from "../assets/home.jpg";
+import qualityOne from "../assets/quality-one.svg";
+import qualityTwo from "../assets/quality-two.svg";
+import qualityThree from "../assets/quality-three.svg";
+import Reviews from "../components/Reviews";
 
 function Home() {
 	return (
@@ -32,8 +36,8 @@ function Home() {
 				<h1>WHY CHOOSE US?</h1>
 				<div className="cards-container">
 					<div className="qualities-card">
-						<div>LOGO</div>
-						<h2>HAND-CRAFTED</h2>
+						<img src={qualityOne} alt="Hand Crafted" />
+						<h2>HAND CRAFTED</h2>
 						<p>
 							Each system's parts are carefully chosen and assembled to provide
 							maximum value, picked and built by a team of professional gamers
@@ -42,7 +46,7 @@ function Home() {
 					</div>
 
 					<div className="qualities-card">
-						<div>LOGO</div>
+						<img src={qualityTwo} alt="Quality Assured" />
 						<h2>QUALITY ASSURED</h2>
 						<p>
 							Every PC is thoroughly inspected and tested through vigorous
@@ -52,7 +56,7 @@ function Home() {
 					</div>
 
 					<div className="qualities-card">
-						<div>LOGO</div>
+						<img src={qualityThree} alt="Lifetime Warranty" />
 						<h2>LIFETIME WARRANTY</h2>
 						<p>
 							All of our computers have unlimited lifetime warranty. If any
@@ -62,7 +66,12 @@ function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="section-three"></div>
+
+			<div className="section-three">
+				<h1>Testimonials</h1>
+				<div className="divider"></div>
+				<Reviews />
+			</div>
 		</div>
 	);
 }

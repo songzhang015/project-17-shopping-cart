@@ -5,6 +5,7 @@
 	gap: 5.5rem;
 }
 
+/* Section One */
 .section-one {
 	margin-top: 2.5rem;
 	width: 96rem;
@@ -58,20 +59,34 @@ button:hover {
 	border-radius: 24px;
 }
 
+/* Section Two */
 .section-two {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 2.5rem;
+	gap: 3.5rem;
 	width: 96rem;
 	background-color: rgb(37, 37, 40);
 	padding: 2.5rem;
+}
+
+.section-two h1 {
+	font-size: 2.5rem;
 }
 
 .cards-container {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+}
+
+.qualities-card img {
+	width: 5rem;
+	filter: invert(1);
+}
+
+.qualities-card:first-child img {
+	transform: scale(1.4);
 }
 
 .qualities-card {
@@ -85,4 +100,24 @@ button:hover {
 .qualities-card p {
 	margin-top: 0.5rem;
 	font-size: 1.25rem;
+}
+
+/* Section Three */
+.section-three {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 96rem;
+	background-color: rgb(37, 37, 40);
+	padding: 2.5rem;
+}
+
+.section-three h1 {
+	font-size: 2.5rem;
+}
+
+.section-three .divider {
+	width: 15rem;
+	border-top: 1px solid white;
+	margin: 0.5rem 0;
 }
