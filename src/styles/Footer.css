@@ -1,6 +1,39 @@
 .footer {
 	background-color: rgb(14, 0, 38);
+	padding: 1.5rem 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.footer .container {
 	display: flex;
 	justify-content: space-between;
-	padding: 1.5rem 2rem;
+	width: 96rem;
+}
+
+.footer h2 {
+	font-size: 1.15rem;
+}
+
+.container > div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.symbols {
+	display: flex;
+	gap: 3.5rem;
+	margin-top: 1rem;
+}
+
+.symbols img {
+	width: 1.5rem;
+	filter: invert(1);
+	transition: transform 0.25s;
+}
+
+.symbols img:hover {
+	cursor: pointer;
+	transform: scale(1.2);
 }

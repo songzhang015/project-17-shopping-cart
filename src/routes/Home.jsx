@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../styles/home.css";
 import homeImage from "../assets/home.jpg";
 import qualityOne from "../assets/quality-one.svg";
