@@ -1,13 +1,16 @@
 import "../styles/home.css";
+import { Link } from "react-router-dom";
 import homeImage from "../assets/home.jpg";
 import qualityOne from "../assets/quality-one.svg";
 import qualityTwo from "../assets/quality-two.svg";
 import qualityThree from "../assets/quality-three.svg";
 import Reviews from "../components/Reviews";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Home() {
 	return (
 		<div className="home">
+			<ScrollToTop />
 			<div className="section-one">
 				<div className="section-left">
 					<div className="tagline">
@@ -24,7 +27,9 @@ function Home() {
 						</p>
 					</div>
 
-					<button>SHOP NOW</button>
+					<Link to="/products" className="btn">
+						SHOP NOW
+					</Link>
 				</div>
 				<div className="section-right">
 					<img src={homeImage} alt="Desktop Setup" />

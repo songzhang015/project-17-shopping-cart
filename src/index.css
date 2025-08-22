@@ -11,14 +11,3 @@
 body {
 	background-color: var(--bg-color);
 }
-
-a {
-	color: white;
-
-	text-decoration: none;
-}
-
-a:hover {
-	font-weight: bold;
-	text-decoration: underline;
-}

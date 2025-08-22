@@ -1,5 +1,6 @@
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
+import cart from "../assets/cart.svg";
 
 function Navbar() {
 	return (
@@ -7,7 +8,7 @@ function Navbar() {
 			<div className="container">
 				<Link to="/products">Products</Link>
 				<Link to="/">Home</Link>
-				<h1>Cart</h1>
+				<img src={cart} alt="Cart" />
 			</div>
 		</div>
 	);

@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import "../styles/products.css";
+import ProductList from "../components/ProductList";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Products() {
 	return (
-		<div>
-			<h1>Welcome to Products!</h1>
-			<Link to="/products/1">Visit Product Details</Link>
+		<div className="products">
+			<ScrollToTop />
+			<h1>Select a Model</h1>
+			<ProductList />
 		</div>
 	);
 }

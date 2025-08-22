@@ -3,10 +3,36 @@
 	padding: 1.5rem 2rem;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .navbar .container {
 	display: flex;
 	justify-content: space-between;
 	width: 96rem;
+}
+
+.navbar .container img {
+	width: 2rem;
+	filter: invert(1);
+	cursor: pointer;
+	transition: filter 0.25s;
+}
+
+.navbar .container img:hover {
+	filter: invert(0.69);
+}
+
+.navbar a {
+	font-size: 1.6rem;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	transition: filter 0.25s;
+}
+
+.navbar a:hover {
+	filter: brightness(0.69);
 }

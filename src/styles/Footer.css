@@ -31,9 +31,9 @@
 	width: 1.5rem;
 	filter: invert(1);
 	transition: transform 0.25s;
+	cursor: pointer;
 }
 
 .symbols img:hover {
-	cursor: pointer;
 	transform: scale(1.2);
 }
