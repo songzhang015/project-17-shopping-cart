@@ -50,9 +50,24 @@ function ProductDetails({ product }) {
 					</div>
 				</div>
 				<div className="btn-group">
-					<button onClick={() => setResolution("1080")}>1080p</button>
-					<button onClick={() => setResolution("1440")}>1440p</button>
-					<button onClick={() => setResolution("4k")}>4k</button>
+					<button
+						onClick={() => setResolution("1080")}
+						className={resolution === "1080" ? "active" : ""}
+					>
+						1080p
+					</button>
+					<button
+						onClick={() => setResolution("1440")}
+						className={resolution === "1440" ? "active" : ""}
+					>
+						1440p
+					</button>
+					<button
+						onClick={() => setResolution("4k")}
+						className={resolution === "4k" ? "active" : ""}
+					>
+						4k
+					</button>
 				</div>
 			</div>
 			<div className="right-section">

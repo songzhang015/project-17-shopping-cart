@@ -52,7 +52,7 @@
 	border: none;
 	color: white;
 	font-weight: bold;
-	transition: filter 0.15s;
+	transition: filter 0.25s;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 .product-card .btn:hover {
-	filter: brightness(0.88);
+	filter: brightness(0.85);
 }
 
 .product-card strong {
@@ -131,12 +131,42 @@
 
 .btn-group {
 	margin-bottom: 1.5rem;
+	border-radius: 8px;
+	overflow: hidden;
+
+	background-color: #cd0728;
+	display: flex;
+	gap: 0.25rem;
+	padding: 0.25rem;
 }
 
 .btn-group button {
-	padding: 0.25rem 0.5rem;
-	background-color: transparent;
+	padding: 0.5rem;
+	background-color: #cd0728;
 	color: white;
-	border: 1px solid white;
+	border: none;
 	width: 4.5rem;
+	border-radius: 4px;
+	transition:
+		filter 0.25s,
+		background-color 0.25s;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.btn-group button:not(.active) {
+	cursor: pointer;
+}
+
+.btn-group button:hover:not(.active) {
+	filter: brightness(0.85);
+}
+
+.btn-group button.active {
+	background-color: #222222;
+}
+
+.performance-data span {
+	color: lime;
+	font-weight: bold;
 }
