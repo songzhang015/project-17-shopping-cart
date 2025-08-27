@@ -74,6 +74,7 @@
 	width: 96rem;
 	background-color: rgb(37, 37, 40);
 	padding: 2.5rem;
+	border-radius: 8px;
 }
 
 .section-two h1 {
@@ -117,6 +118,7 @@
 	background-color: rgb(37, 37, 40);
 	padding: 2.5rem;
 	margin-bottom: 2.5rem;
+	border-radius: 8px;
 }
 
 .section-three h1 {

@@ -127,13 +127,13 @@
 	justify-content: space-between;
 	width: 30rem;
 	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
 }
 
 .btn-group {
 	margin-bottom: 1.5rem;
 	border-radius: 8px;
 	overflow: hidden;
-
 	background-color: #cd0728;
 	display: flex;
 	gap: 0.25rem;
@@ -141,7 +141,7 @@
 }
 
 .btn-group button {
-	padding: 0.5rem;
+	padding: 0.5rem 0.75rem;
 	background-color: #cd0728;
 	color: white;
 	border: none;
@@ -150,7 +150,7 @@
 	transition:
 		filter 0.25s,
 		background-color 0.25s;
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 	font-weight: bold;
 }
 
