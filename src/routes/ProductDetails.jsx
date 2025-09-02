@@ -1,10 +1,13 @@
 import ScrollToTop from "../components/ScrollToTop";
 import DetailedProductCard from "../components/DetailedProductCard";
 import pc from "../assets/pc.jpg";
-import React, { useState } from "react";
+import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
 function ProductDetails({ product }) {
+	const { addToCart } = useOutletContext();
 	const [resolution, setResolution] = useState("1080");
+
 	return (
 		<div className="product-details">
 			<ScrollToTop />
@@ -14,37 +17,37 @@ function ProductDetails({ product }) {
 				<div className="performance-data">
 					<div className="line">
 						<div>Minecraft</div>
-						<div>
+						<div key={resolution} className="fps">
 							<span>{product[resolution].minecraft}</span> FPS
 						</div>
 					</div>
 					<div className="line">
 						<div>Fortnite</div>
-						<div>
+						<div key={resolution} className="fps">
 							<span>{product[resolution].fortnite}</span> FPS
 						</div>
 					</div>
 					<div className="line">
 						<div>Elden Ring</div>
-						<div>
+						<div key={resolution} className="fps">
 							<span>{product[resolution].elden}</span> FPS
 						</div>
 					</div>
 					<div className="line">
 						<div>Cyberpunk 2077</div>
-						<div>
+						<div key={resolution} className="fps">
 							<span>{product[resolution].cyberpunk}</span> FPS
 						</div>
 					</div>
 					<div className="line">
 						<div>Clair Obscur: Expedition 33</div>
-						<div>
+						<div key={resolution} className="fps">
 							<span>{product[resolution].expedition}</span> FPS
 						</div>
 					</div>
 					<div className="line">
 						<div>Marvel Rivals</div>
-						<div>
+						<div key={resolution} className="fps">
 							<span>{product[resolution].rivals}</span> FPS
 						</div>
 					</div>
@@ -71,7 +74,13 @@ function ProductDetails({ product }) {
 				</div>
 			</div>
 			<div className="right-section">
-				<DetailedProductCard {...product} />
+				<div className="product-details-container">
+					<DetailedProductCard {...product} />
+				</div>
+
+				<button className="add-cart-btn" onClick={() => addToCart(product)}>
+					Add to Cart
+				</button>
 			</div>
 		</div>
 	);

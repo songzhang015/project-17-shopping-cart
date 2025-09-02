@@ -43,9 +43,9 @@ function Home() {
 						<img src={qualityOne} alt="Hand Crafted" />
 						<h2>HAND CRAFTED</h2>
 						<p>
-							Each system's parts are carefully chosen and assembled to provide
-							maximum value, picked and built by a team of professional gamers
-							who use these very own PCs.
+							Each part is carefully chosen and assembled to provide maximum
+							value and built by a team of professional gamers who trust and use
+							these very PCs themselves.
 						</p>
 					</div>
 

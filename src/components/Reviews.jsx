@@ -6,30 +6,30 @@ const reviews = [
 		id: 1,
 		name: "Mary",
 		review:
-			"My PC arrived a few days earlier than expected, and I was updated every step of the way!",
+			"My PC arrived a few days earlier than expected! Great comunication and fast delivery.",
 	},
 	{
 		id: 2,
 		name: "John",
 		review:
-			"The build quality is amazing, and the performance exceeded my expectations.",
+			"The build quality is amazing, and the performance was better than I expected.",
 	},
 	{
 		id: 3,
 		name: "Alice",
 		review:
-			"Customer service was very helpful and answered all my questions very quickly.",
+			"Customer service was very helpful and Sam answered all my questions very quickly.",
 	},
 	{
 		id: 4,
 		name: "Bob",
-		review: "Super fast delivery, highly recommend this brand!",
+		review: "They had super quick shipping times and everything went great.",
 	},
 	{
 		id: 5,
 		name: "Sophia",
 		review:
-			"I love my new PC! It runs all my games smoothly and looks fantastic.",
+			"I love my new PC! It looks fantastic and runs all my games super smoothly.",
 	},
 ];
 

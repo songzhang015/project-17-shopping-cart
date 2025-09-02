@@ -79,7 +79,7 @@ const ProductsArray = [
 		gpu: "AMD RX 9070 XT",
 		ram: "32 GB DDR5 RAM",
 		ssd: "2 TB SSD",
-		price: "1499.99",
+		price: "1,499.99",
 		mb: "Gigabyte B850M",
 		psu: "750W Gold",
 		1080: {
@@ -115,7 +115,7 @@ const ProductsArray = [
 		gpu: "NVIDIA RTX 5070 Ti",
 		ram: "32 GB DDR5 RAM",
 		ssd: "2 TB SSD",
-		price: "1749.99",
+		price: "1,749.99",
 		mb: "Gigabyte B850",
 		psu: "850W Gold",
 		1080: {
@@ -151,7 +151,7 @@ const ProductsArray = [
 		gpu: "NVIDIA RTX 5080",
 		ram: "64 GB DDR5 RAM",
 		ssd: "4 TB SSD",
-		price: "2499.99",
+		price: "2,499.99",
 		mb: "Gigabyte B850",
 		psu: "1000W Gold",
 		1080: {
@@ -187,7 +187,7 @@ const ProductsArray = [
 		gpu: "NVIDIA RTX 5090",
 		ram: "128 GB DDR5 RAM",
 		ssd: "8 TB SSD",
-		price: "4249.99",
+		price: "4,249.99",
 		mb: "ASUS ROG Strix X670E",
 		psu: "1200W Gold",
 		1080: {

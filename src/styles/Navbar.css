@@ -80,3 +80,81 @@
 .cart .right-section.active {
 	transform: translateX(0);
 }
+
+.cart .right-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cart .right-section h1 {
+	margin-top: 1rem;
+}
+
+.cart .divider {
+	width: 7.5rem;
+	border: 1px solid white;
+}
+
+.cart .right-section .item-container {
+	display: flex;
+	gap: 2rem;
+	padding: 1.5rem;
+	width: 100%;
+}
+
+.cart .right-section .item-container p {
+	font-size: 1.4rem;
+}
+
+.cart .item-img img {
+	width: 6rem;
+}
+
+.cart .item-details {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 0.5rem;
+}
+
+.line {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.checkout-btn {
+	margin-top: 2rem;
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	background-color: #cd0728;
+	border: none;
+	color: white;
+	font-weight: bold;
+	transition:
+		filter 0.25s,
+		transform 0.1s;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.checkout-btn:active {
+	transform: scale(0.96);
+}
+
+.checkout-btn:hover {
+	filter: brightness(0.85);
+}
+
+.remove-btn {
+	border: none;
+	background: none;
+	color: white;
+	cursor: pointer;
+	text-decoration: underline;
+}

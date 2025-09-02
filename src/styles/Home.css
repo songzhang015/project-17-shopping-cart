@@ -105,7 +105,8 @@
 }
 
 .qualities-card p {
-	margin-top: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
 	font-size: 1.25rem;
 }
 
@@ -129,4 +130,5 @@
 	width: 15rem;
 	border-top: 1px solid white;
 	margin: 0.5rem 0;
+	margin-bottom: 1.5rem;
 }
